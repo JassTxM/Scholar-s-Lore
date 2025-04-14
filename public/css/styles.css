@@ -923,8 +923,6 @@ footer ul li a {
 }
 
 /* About Us Page */
-
-/* About Image */
 .about-img{
     background-image: url(/public/img/about.jpg);
     background-size: cover;
@@ -1064,6 +1062,42 @@ footer ul li a {
 }
 
 /* Responsive About Us Page */
+@media (max-width: 1200px) {
+    .about-info {
+        max-width: 95%;
+        padding: 35px 15px;
+    }
+    
+    .about-table {
+        margin: 1.5rem 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-img {
+        height: 45vw;
+    }
+    
+    .about-title h1 {
+        width: 40%;
+        font-size: 32px;
+    }
+    
+    .about-head p {
+        font-size: 26px;
+    }
+    
+    .about-info {
+        padding: 30px 15px;
+    }
+    
+    .about-table th,
+    .about-table td {
+        padding: 0.9rem;
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .about-img {
         height: 60vw;
@@ -1083,6 +1117,11 @@ footer ul li a {
         margin: 30px auto;
     }
     
+    .about-data p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
     .contributor-box img {
         width: 80px;
         height: 100px;
@@ -1091,15 +1130,83 @@ footer ul li a {
     .icon-cell {
         width: 40px;
     }
+    
+    .about-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .about-table th,
+    .about-table td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (max-width: 480px) {
+    .about-img {
+        height: 80vw;
+        min-height: 200px;
+    }
+    
     .about-title h1 {
-        width: 40%;
+        width: 90%;
+        font-size: 24px;
+        min-width: 150px;
+    }
+    
+    .about-head p {
+        font-size: 20px;
     }
     
     .about-info {
-        padding: 30px;
+        padding: 15px 10px;
+    }
+    
+    .about-data p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+    
+    .contributor-box img {
+        width: 70px;
+        height: 90px;
+    }
+    
+    .icon-cell {
+        width: 30px;
+    }
+    
+    .about-table th,
+    .about-table td {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .about-table i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-title h1 {
+        font-size: 20px;
+        min-width: 120px;
+    }
+    
+    .about-head p {
+        font-size: 18px;
+    }
+    
+    .about-data p {
+        font-size: 13px;
+    }
+    
+    .contributor-box img {
+        width: 60px;
+        height: 80px;
     }
 }
 
