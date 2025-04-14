@@ -9,14 +9,14 @@ import session from "express-session";
 import env from "dotenv";
 import http from "http";
 import { neon } from "@neondatabase/serverless";
-
+import fs from 'fs';
+import url from 'url';
 
 
 const app = express();
 const port = 3000;
 const saltRounds = 10;
 env.config();
-
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/public', express.static('public'));
@@ -29,26 +29,8 @@ app.use(
   })
 );
 
-
 app.use(passport.initialize());
 app.use(passport.session());
-
-// const sql= neon(process.env.DATABASE_URL);
-
-// const requestHandler = async (req, res) => {
-//   const result = await sql`SELECT version()`;
-//   const { version } = result[0];
-//   res.writeHead(200, { "Content-Type": "text/plain" });
-//   res.end(version);
-// };
-
-// http.createServer(requestHandler).listen(4000, () => {
-//   console.log("Server running at http://localhost:4000");
-// });
-
-import fs from 'fs';
-// const pg = require('pg');
-import url from 'url';
 
 
 const config = {
