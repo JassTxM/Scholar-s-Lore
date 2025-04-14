@@ -1,0 +1,42 @@
+<%- include('partials/header', {pageTitle: "BILLING"}) %>
+<!-- Bill Section -->
+    <main>
+    <div class="bill-container" >
+        <h1 class="bill-title">Billing Information</h1>
+        <form class="bill-form" action="/bill-payment"  method="POST">
+            <div class="bill-form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+             
+            <div class="bill-form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="bill-form-group">
+                <label for="address">Billing Address</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            
+            <div class="bill-form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+            </div>
+            
+            <div class="bill-form-group">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="month" id="expiryDate" name="expiryDate" required>
+            </div>
+            
+            <div class="bill-form-group">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" maxlength="3" required>
+            </div>
+            
+            <button type="submit" name="submit" value="Submit" class="bill-submit-button">Proceed to Payment</button>
+        </form>
+    </div>
+</main>
+<%- include('partials/chatbot') %>
+<%- include('partials/footer') %>

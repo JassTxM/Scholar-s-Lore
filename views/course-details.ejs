@@ -1,0 +1,69 @@
+<%- include('partials/header', {pageTitle: course.name}) %>
+
+<div class="course-details-container">
+    <!-- course-details-details Header Section -->
+    <section class="course-details-header">
+        <div class="course-details-header-content">
+            <h1 class="course-details-title"><%= course.name %></h1>
+            <div class="course-details-meta">
+                <span class="author">
+                    <i class="fas fa-user"></i> 
+                    <%= course.author %>
+                </span>
+                <span class="course-details-id">
+                    <i class="fas fa-hashtag"></i> 
+                    <%= course.courseid %>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- course-details Content Section -->
+    <div class="course-details-content-wrapper">
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <iframe 
+                    src="<%= course.video %>" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- course-details Information -->
+        <div class="course-details-info-grid">
+            <!-- Description Section -->
+            <section class="course-details-description">
+                <h2>Course Description</h2>
+                <p><%= course.description %></p>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="course-details-skills">
+                <h2>What You'll Learn</h2>
+                <div class="skills-grid">
+                    <% if (course.skills && course.skills.length > 0) { %>
+                        <% course.skills.forEach(skill => { %>
+                            <div class="skill-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span><%= skill %></span>
+                            </div>
+                        <% }); %>
+                    <% } %>
+                </div>
+            </section>
+
+            <!-- Conclusion Section -->
+            <section class="course-details-conclusion">
+                <h2>Course Conclusion</h2>
+                <p><%= course.conclusion %></p>
+            </section>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/chatbot') %>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,31 @@
+<section>
+<div id="chatbot-container">
+    <div id="chatbot-button">
+      <div id="chatbot-icon">
+        <img id="bot-avatar" src="/public/img/chatbot.png" alt="Scholar's Bot" onerror="this.src='/img/logo.png'">
+      </div>
+    </div>
+    <div id="chatbot-panel">
+      <div id="chatbot-header">
+        <div class="chat-title">The Scholar</div>
+        <div class="chat-controls">
+          <button id="minimize-chat"></button>
+          <button id="close-chat"></button>
+        </div>
+      </div>
+      <div id="chatbot-messages">
+        <div class="bot-message">
+          Hello! I'm The Scholar. How can I help you today?
+        </div>
+      </div>
+      <div id="chatbot-typing"></div>
+      <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button id="send-button">
+          <i class="fa fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+  <script src="/public/js/chatbot.js"></script>

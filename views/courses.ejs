@@ -1,0 +1,48 @@
+<%- include('partials/header', {pageTitle: "COURSES"}) %>
+
+<div class="courses-container">
+    <section class="courses-header">
+        <h1 class="courses-title">EXPLORE OUR COURSES</h1>
+        <div class="search-wrapper">
+            <div class="search-box">
+                <input type="text" id="courseSearch" placeholder="Search for courses...">
+                <button type="button" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="courses-grid">
+        <% if (courses && courses.length > 0) { %>
+            <% courses.forEach(course => { %>
+                <div class="course-card" data-course-id="<%= course.courseid %>">
+                    <div class="course-thumbnail">
+                        <img src="<%= course.thumbnail %>" alt="<%= course.name %>" loading="lazy">
+                        <div class="course-overlay">
+                            <span class="view-btn">View Course</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title"><%= course.name %></h3>
+                        <div class="course-meta">
+                            <span class="course-id">#<%= course.courseid %></span>
+                        </div>
+                        <a href="/course/<%= course.courseid %>" class="enroll-btn">Learn More</a>
+                    </div>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <div class="no-courses">
+                <i class="fas fa-book-open"></i>
+                <p>No courses available at the moment.</p>
+            </div>
+        <% } %>
+    </section>
+</div>
+
+<%- include('partials/chatbot') %>
+
+
+<%- include('partials/footer') %>
+

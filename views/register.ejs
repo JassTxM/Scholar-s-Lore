@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : "Scholar's Lore" %></title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-image">
+       <img src="public/img/login.jpg" alt="Register Image">
+    </div>
+    <div class="login-form">
+        <h2>REGISTER</h2>
+        <form action="/register" method="POST">
+
+
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" name="username" required>
+           
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
+        
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password" required>
+           
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a style = "color:#fabe5c; text-decoration: none;" href="/login">Login here</a></p>
+        
+        <a  href="/auth/google" class="google-btn" style="text-decoration: none;">
+            <i class="fa-brands fa-google" style="color: #f9c87b; "></i>Sign up with Google
+        </a>
+    </div>
+</div>
+
+</body>
+</html> 

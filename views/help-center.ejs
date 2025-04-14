@@ -1,0 +1,118 @@
+<%- include('partials/header', {pageTitle: "HELP CENTER"}) %>
+
+    <!-- Help Center Section -->
+
+    <div class="help">
+        <h1 class="help-title">HELP CENTER</h1>
+    
+        <!-- Support Message -->
+        <p class="help-subtext">
+            At Scholar's Lore, we believe that user satisfaction is our top priority. If you have any questions or need assistance,
+            <br> feel free to reach out at
+            <a href="mailto:support@scholarslore.com">abcdef@chitkara.edu.in</a> 
+            or call us at 
+            <span class="phone-number">+91 1234567890</span>
+        </p>
+    </div>
+    
+    
+    <div class="help-center">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer1')">
+            <span class="faq-plus">+</span> What is Scholar's Lore?
+          </div>
+          <div class="faq-answer" id="answer1" style="display: none;">
+            Scholar's Lore is an online learning platform that offers a variety of courses to enhance your educational journey.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer2')">
+            <span class="faq-plus">+</span> What type of courses are available on Scholar's Lore?
+          </div>
+          <div class="faq-answer" id="answer2" style="display: none;">
+            We offer a wide range of courses beyond class 12, including technical, competitive exam preparation, and skill-development programs tailored for college students and professionals.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer3')">
+            <span class="faq-plus">+</span> Is there any customer support available?
+          </div>
+          <div class="faq-answer" id="answer3" style="display: none;">
+            Yes, our customer support team is available 24/7 to assist you with any issues or questions you may have.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer4')">
+            <span class="faq-plus">+</span> How do I register on Scholar's Lore?
+          </div>
+          <div class="faq-answer" id="answer4" style="display: none;">
+            You can register easily using your email address, or save time by signing in with your Google account through our secure login system.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer5')">
+            <span class="faq-plus">+</span> Are the courses free or paid?
+          </div>
+          <div class="faq-answer" id="answer5" style="display: none;">
+            Some of the courses are free, while others may require a subscription or one-time payment. Please check the course details for more information.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer6')">
+            <span class="faq-plus">+</span> Are there any prerequisites for taking a course?
+          </div>
+          <div class="faq-answer" id="answer6" style="display: none;">
+            Some advanced courses may have recommended prerequisites, which are mentioned in the course description. However, many of our courses are beginner-friendly and open to everyone.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer7')">
+            <span class="faq-plus">+</span> Can I access the platform on mobile devices?
+          </div>
+          <div class="faq-answer" id="answer7" style="display: none;">
+            Yes, Scholar’s Lore is fully responsive and mobile-friendly, so you can learn anytime, anywhere on your phone or tablet.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer8')">
+            <span class="faq-plus">+</span> Is there any support available if I face technical issues?
+          </div>
+          <div class="faq-answer" id="answer8" style="display: none;">
+            Definitely. You can reach out to our support team via the "Contact Us" page, and we’ll assist you as soon as possible.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer9')">
+            <span class="faq-plus">+</span> What should I do if a video or lesson isn’t loading?
+          </div>
+          <div class="faq-answer" id="answer9" style="display: none;">
+            Try refreshing the page or checking your internet connection. If the problem persists, contact our support team through the Help Center.
+          </div>
+        </div>
+
+        <!-- New FAQ Question -->
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer('answer10')">
+            <span class="faq-plus">+</span> Is my personal information safe on Scholar’s Lore?
+          </div>
+          <div class="faq-answer" id="answer10" style="display: none;">
+            We prioritize your privacy and use encryption and secure protocols to ensure your data is always protected.
+          </div>
+        </div>
+      </div>
+
+      <p class="powered-by-text">Powered by Scholar's Lore, an innovative online learning platform dedicated to enhancing your educational journey.</p>
+    </div>
+<%- include('partials/chatbot') %>
+
+<%- include('partials/footer') %>

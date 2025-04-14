@@ -1,0 +1,180 @@
+<%- include('partials/header', {pageTitle: "Scholar's Lore"}) %>
+
+
+    <!-- Main Section -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="display-text">
+            <h1 class="d-text">The Scholar</h1>
+            <h1 class="d-text">Welcomes You!</h1>
+          </div>
+          <p class="hero-description">
+            Discover a world of knowledge and skills on a platform that offers expert-led courses designed to fit your
+            schedule. Whether you're upskilling for your career or learning something new, we make education accessible
+            and flexible.
+          </p>
+          <div class="search-area">
+            <input type="text" placeholder="Search for Courses" />
+            <button><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              src="/public/img/hero.jpg"
+              alt="Hero Image" />
+          </div>
+        </div>
+      </section>
+      <!-- Quote Section -->
+      <section class="quote">
+        <p>"Uncover the secrets of knowledge, one lesson at a time."</p>
+      </section>
+
+      <section class="features-cards">
+        <div class="f-card">
+          <i class="fa fa-graduation-cap"></i>
+          <h3>Expert Instructors</h3>
+          <p>Learn from top industry professionals with hands-on experience.</p>
+        </div>
+        <div class="f-card">
+          <i class="fa fa-book"></i>
+          <h3>Flexible Learning</h3>
+          <p>Access courses anytime, anywhere from any device.</p>
+        </div>
+        <div class="f-card">
+          <i class="fa fa-certificate"></i>
+          <h3>Certification</h3>
+          <p>Get certificates upon completion to boost your career.</p>
+        </div>
+        <div class="f-card">
+          <i class="fa fa-globe"></i>
+          <h3>Global Community</h3>
+          <p>Join a community of learners from all over the world.</p>
+        </div>
+      </section>
+
+      <!-- Partner Section-->
+      <section class="company-logos">
+        <h2 class="partner-title">Courses Offered By</h2>
+        <div class="logos">
+          <img id="1c" src="public/img/clogo1.png" alt="Company 1" />
+          <img id="2c" src="public/img/clogo2.png" alt="Company 2" />
+          <img id="3c" src="public/img/clogo3.png" alt="Company 3" />
+          <img id="4c" src="public/img/clogo4.png" alt="Company 4" />
+        </div>
+      </section>
+
+      <!-- Course Card Section -->
+      <section class="feature-courses-card-section" id="c-card">
+        <h2 class="feature-card-section-title">Featured Courses</h2>
+        <div class="feature-courses-card-container">
+          <a href="/course/4" class="feature-course-card">
+            <img src="public/img/course4.jpg" alt="Course 1" class="feature-course-card-thumbnail">
+            <h3 class="feature-course-card-title">C Programming Tutorial</h3>
+          </a>
+
+          <a href="/course/2" class="feature-course-card">
+            <img src="public/img/course2.jpg" alt="Course 2" class="feature-course-card-thumbnail">
+            <h3 class="feature-course-card-title">The DBMS Powerhouse</h3>
+          </a>
+          <a href="/course/1" class="feature-course-card">
+            <img src="public/img/course1.jpg" alt="Course 3" class="feature-course-card-thumbnail">
+            <h3 class="feature-course-card-title">DSA Python Bootcamp</h3>
+          </a>
+        </div>
+
+        <a href="/courses" class="view-all-link">View All Courses</a>
+      </section>
+
+      <!-- Billing Section -->
+      <section id="pricing">
+        <div class="container">
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h2 class="billing-title">A Plan for Your Every Need</h2>
+            <p class="fs-5 text-body-secondary">
+              Simple and affordable price plans for you to start your journey.
+            </p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Gratuitous</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹0<small class="text-body-secondary fw-light">/month</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Access to limited courses</li>
+                    <li>Basic community access</li>
+                    <li>Limited support</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark">
+                    <a style = "color: #f9c87b; text-decoration:none ;" href="/plans">Start Learning</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pivotal</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹2500<small class="text-body-secondary fw-light">/month</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Access to all courses</li>
+                    <li>Exclusive webinars</li>
+                    <li>Community access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark">
+                    <a style= "color: #ffffff; text-decoration: none;"href="/plans">Get started</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-dark">
+                <div class="card-header py-3 text-bg-dark border-dark">
+                  <h4 class="my-0 fw-normal">Crème de la crème</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">
+                    ₹8000<small class="text-body-secondary fw-light">/month</small>
+                  </h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Unlimited access to all features</li>
+                    <li>Priority support</li>
+                    <li>1-on-1 mentoring</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark">
+                    <a href="/plans"></a>Get Started</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="see-more"><a href="/plans">See More Plans</a></div>
+        </div>
+      </section>
+
+      <!-- Conclusion Section -->
+      <section class="conclusion">
+        <h2 class="conclusion-title">Why Choose Us?</h2>
+        <p>
+          Unlock your potential with our top-notch courses and skilled
+          instructors.
+        </p>
+        <p>
+          Join millions of learners across the globe to elevate your career.
+        </p>
+      </section>
+    </main>
+    <%- include('partials/chatbot') %>
+    <%- include('partials/footer') %>

@@ -1,0 +1,53 @@
+<%- include('partials/header', {pageTitle: "CONTACT US"}) %>
+
+<!-- Contact Section -->
+<main>
+    <section class="contact">
+        <div class="contact-form">
+            <h1>CONTACT US</h1>
+            <h2>"Your Path to Knowledge Starts Here - Get in Touch!"</h2><br>
+            <p>Got any queries? We are here to help you. Drop your queries below and we will respond back to you in 2-3 business days.</p>
+            
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-head">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                    </div>
+
+                    <p>Chitkara University, Punjab</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-head">
+                        <i class="fa fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                    </div>
+                    <p>+91 1234567890</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-head">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Email</h3>
+                     </div>
+                    <p class="info-email"><a href="mailto:abcdef@chitkara.edu.in">abcdef@chitkara.edu.in</a></p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <form class="c-form" action="/submit-contact" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" name="emails" id="" placeholder="E-mail" required>
+                <input type="text" placeholder="Write a Subject" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" name="submit" value="Submit" class="btn">Submit</button>
+            </form>
+        </div>
+        
+        <div class="contact-img">
+            <img src="public/img/contact.jpg" alt="">
+        </div>
+    </section>
+</main>
+<%- include('partials/chatbot') %>
+<%- include('partials/footer') %> 

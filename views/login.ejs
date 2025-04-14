@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof title !== 'undefined' ? title : "Scholar's Lore" %></title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="login-container">
+    <div class="login-image">
+       <img src="public/img/login.jpg" alt="Login Image">
+    </div>
+    <div class="login-form">
+        <h2>LOGIN</h2>
+        <form action="/login" method="POST">
+            <label for="email">Username:</label>
+            <input type="text" id="email" placeholder="Enter Username" name="username" required>
+            <small id="username-error" class="error-message"></small>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+            <small id="password-error" class="error-message"></small>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a style = "color:#fabe5c; text-decoration: none;" href="/register">Register here</a></p>
+        
+        <a  href="/auth/google" class="google-btn" style="text-decoration: none;">
+            <i class="fa-brands fa-google" style="color: #f9c87b;"></i> Sign in with Google
+        </a>
+    </div>
+</div>
+</body>
+</html> 
